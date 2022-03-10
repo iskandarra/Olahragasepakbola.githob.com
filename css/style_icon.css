@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.abu {
+    color: rgb(78, 80, 80);
+}
+
+.warana-:hover {
+    background-color: #222424;
+    border-radius: 40px;
+}
+
+.ico {
+    position: relative;
+    display: flex;
+    margin-left: 10px;
+}
+
+.warana- {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.warana- {
+    z-index: 10000;
+    transform: scale(0.75);
+}
+
+.ico .warana-::before {
+    content: "";
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--clr), 0 0 0 20px var(--bg), 0 0 0 22px var(--clr);
+}
+
+.ico .warana-:hover::before {
+    inset: 0px;
+}
+
+.ico .warana-::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: rotate(45deg);
+}
+
+.ico .warana- {
+    position: relative;
+    text-decoration: none;
+    color: var(--clr);
+    z-index: 10;
+    font-size: 2em;
+}
+
+.ico .warana-:hover {
+    font-size: 2em;
+    filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+.gallery img {
+    background-color: aquamarine;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#gallery-modal .modal-img {
+    width: 100%;
+}
+
+.main-color {
+    background-color: #222424;
+}
+
+.icon-sevrice {
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    background-color: #b7eef1;
+}
+
+.atas {
+    margin-top: -50px;
+}
+
+.over {
+    overflow: hidden;
+}
+
+
+/* texthover */
+
+.hovr {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #eeeeee;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.hovr:hover {
+    color: #0c0e0c;
+    background: #c6e70c;
+    box-shadow: 0 0 10px #ee0725, 0 0 40px #ec0995, 0 0 80px #12f112;
+    transition-delay: 1s;
+    text-decoration: none;
+}
+
+.hovr span {
+    position: absolute;
+    display: block;
+}
+
+.hovr span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #e006d5);
+}
+
+.hovr:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.hovr span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #e006d5);
+}
+
+.hovr:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.hovr span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2dec07);
+}
+
+.hovr:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.hovr span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2dec07);
+}
+
+.hovr:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
